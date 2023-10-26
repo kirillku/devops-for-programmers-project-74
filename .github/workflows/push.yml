@@ -1,0 +1,8 @@
+name: ci
+on: push
+jobs:
+  say:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: make ci
