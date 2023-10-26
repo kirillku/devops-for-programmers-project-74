@@ -1,3 +1,7 @@
 services:
+  build:
+    dockerfile: Dockerfile
+  volumes:
+    - "./app:/app"
   app:
     command: make dev
