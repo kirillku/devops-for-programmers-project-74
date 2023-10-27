@@ -5,7 +5,7 @@ start:
 	npm start
 
 dev:
-	npm run dev
+	sleep 3 && npm run dev
 
 lint:
 	npx eslint .
