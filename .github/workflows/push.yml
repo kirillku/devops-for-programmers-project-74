@@ -6,6 +6,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: make test
+        env:
+          DATABASE_NAME: ${{ secrets.DATABASE_NAME }}
+          DATABASE_USERNAME: ${{ secrets.DATABASE_USERNAME }}
+          DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+          DATABASE_PORT: ${{ secrets.DATABASE_PORT }}
+          DATABASE_HOST: ${{ secrets.DATABASE_HOST }}
 
   push:
     needs: test
