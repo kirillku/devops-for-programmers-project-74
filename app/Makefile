@@ -11,7 +11,7 @@ lint:
 	npx eslint .
 
 test:
-	npm test
+	sleep 3 && npm test
 
 heroku-logs:
 	heroku logs --tail
