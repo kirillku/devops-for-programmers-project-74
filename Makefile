@@ -1,3 +1,6 @@
+install:
+	docker run -it -w /root -v `pwd`/app:/root node:14.18.1 npm ci
+
 dev:
 	docker-compose up
 

@@ -13,6 +13,12 @@
 make prepare-env
 ```
 
+- Install dependencies
+
+```bash
+make install
+```
+
 - Start project locally
 
 ```bash
